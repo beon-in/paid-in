@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anine Store - Bio Link</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Animasi masuk saat halaman dimuat */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #EBEBEB; /* Warna dasar yang senada */
+            /* Menggunakan gambar background yang Anda lampirkan */
+            background-image: url('https://bit.ly/Biolink_KiosQ'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            /* Padding atas disesuaikan agar tombol mulai di bawah foto profil pada background */
+            padding: 340px 25px 50px 25px; 
+            text-align: center;
+            box-sizing: border-box;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Gaya Tombol Utama */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px 0;
+            margin-bottom: 14px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.3s ease; /* Durasi animasi halus */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Warna spesifik sesuai desain */
+        .btn-taupe { background-color: #948C84; color: white; }
+        .btn-dark { background-color: #3B3226; color: white; }
+        .btn-black { background-color: #000000; color: white; }
+
+        /* Animasi Hover & Klik */
+        .btn:hover {
+            transform: translateY(-3px); /* Tombol sedikit naik saat disentuh */
+            filter: brightness(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .btn:active {
+            transform: scale(0.96); /* Efek membal saat diklik */
+        }
+
+        /* Layout Gambar Kategori (Berdampingan) */
+        .category-grid {
+            display: flex;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .category-item {
+            flex: 1;
+            text-align: left;
+        }
+
+        .category-item h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #333;
+            letter-spacing: 0.5px;
+        }
+
+        .category-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.4s ease;
+        }
+
+        .category-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Ikon Media Sosial */
+        .social-icons {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .social-icons a {
+            color: #000;
+            font-size: 28px;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #948C84;
+        }
+
+        /* Penyesuaian untuk layar HP kecil */
+        @media (max-width: 400px) {
+            .container { padding-top: 280px; }
+            .category-img { height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <br/><br/><br/><br/>
+        <a href="https://toko.id/anin3" target="_blank" class="btn btn-taupe">Mau COD? Produknya ada disini</a>
+        <a href="https://gadget.info-123.my.id" target="_blank" class="btn btn-dark">Info seputar Gadget</a>
+
+        <div class="category-grid">
+            <div class="category-item">
+                <h3>MUSLIM FASHION</h3>
+                <a href="https://toko.id/anin3/kategori/Fashion-Wanita" target="_blank"><img src="https://seller.paidin.id/upload/product/1606899895_8fc78d73c6d303df15021601f4f5b965.jpg?q=80&w=400" alt="Fashion" class="category-img"></a>
+            </div>
+            <div class="category-item">
+                <h3>BAG COLLECTIONS</h3>
+                <a href="https://toko.id/anin3/kategori/Tas-Wanita" target="_blank"><img src="https://seller.paidin.id/upload/product/1623232160_8d0552e173a94ba216733bb96869dcd1.jpg?q=80&w=400" alt="Bag Collections" class="category-img"></a>
+            </div>
+        </div>
+
+        <a href="https://informa.clicx.my.id/" target="_blank" class="btn btn-dark">Furniture - Interior</a>
+		<a href="https://www.buku-on.my.id" target="_blank" class="btn btn-taupe">Buku Arsitektur & Fotografi</a>
+        <a href="https://paidin.id/?ref=5eTRHjYX" target="_blank" class="btn btn-black" style="font-style: italic;">yuk, Gabung jadi Reseller..</a>
+
+        <div class="social-icons">
+            <a href="https://instagram.com/paid.inshop" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/spring.residence.5" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/adm_blogxyz" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
